@@ -16,7 +16,7 @@ function App() {
       const res = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`);
       const data = await res.json();
       console.log(API_KEY);
-      console.log("TMDB response:" data);
+      console.log("TMDB response:", data);
       setMovies(data.results);
       setFilteredMovies(data.results);
     }
