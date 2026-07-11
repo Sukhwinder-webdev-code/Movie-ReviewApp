@@ -3,7 +3,8 @@ A React app that displays popular movies using the **TMDB API**. Users can brows
 Built with **Vite**, **React**, and **CSS**, fully responsive and fast.  
 
 ## Live Demo
-ViewLive:https://react-project-vy56.vercel.app/
+ViewLive:https://react-project-zeta-dusky.vercel.app/
+
 
 
 ## Table of Contents
