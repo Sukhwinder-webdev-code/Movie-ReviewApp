@@ -15,7 +15,7 @@ export const Component2 = ({ handleFilteredMovies, rating,setSortingCondition, h
                 <select aria-label="display order" onChange={handleOrder} name="sorted" className="text-black">
                     <option value="">Order</option>
                     <option value="ascending">Ascending</option>
-                    <option value="deccending">Decending</option>
+                    <option value="decending">Decending</option>
                 </select>
             </section>
         </header>
