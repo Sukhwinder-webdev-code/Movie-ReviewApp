@@ -53,7 +53,7 @@ function App() {
 
   // 
   const handleOrder = (e) => {
-    setAscending(e.target.value === 'Ascending' ? false : true);
+    setAscending(e.target.value === 'Decending' ? false : true);
 
   }
 
