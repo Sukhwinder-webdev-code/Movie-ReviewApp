@@ -15,7 +15,6 @@ function App() {
     const movies = async () => {
       const res = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`);
       const data = await res.json();
-      console.log("TMDB response:", data);
       setMovies(data.results);
       setFilteredMovies(data.results);
     }
@@ -54,7 +53,7 @@ function App() {
 
   // 
   const handleOrder = (e) => {
-    setAscending(e.target.value === 'Decending' ? false : true);
+    setAscending(e.target.value === 'decending' ? false : true);
 
   }
 
