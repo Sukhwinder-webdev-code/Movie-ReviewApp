@@ -7,14 +7,15 @@ export const Component2 = ({ handleFilteredMovies, rating,setSortingCondition, h
             <h1 className="text-xl mb-2">Popular</h1>
             <section className="flex gap-6 px-4">
                 <RatingList rating={rating} ratings={[8, 7, 6]} handleFilteredMovies={handleFilteredMovies} />
-                <select value="sortBy" onChange={(e)=>setSortingCondition(e.target.value)} name="category" id="Category" className="text-black">
-                    <option value="">SortBy</option>
-                    <option value="date">Date</option>
-                    <option value="rating">Rating</option>
+                <label htmlFor="category"></label>
+                <select aria-label="select sorting category" onChange={(e)=>setSortingCondition(e.target.value)} name="category" id="Category" className="text-black">
+                    <option value="Date">Date</option>
+                    <option value="Rating">Rating</option>
                 </select>
-                <select value="order" onChange={handleOrder} name="sorted" className="text-black">
-                    <option>Ascending</option>
-                    <option>Decending</option>
+                <label htmlFor="sorted"></label>
+                <select aria-label="select order" onChange={handleOrder} name="sorted" id="sorted" className="text-black">
+                    <option value="Ascending">Ascending</option>
+                    <option value="Decending">Decending</option>
                 </select>
             </section>
         </header>
