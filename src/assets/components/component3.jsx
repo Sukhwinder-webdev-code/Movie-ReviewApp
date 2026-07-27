@@ -6,6 +6,8 @@ export const Component3 = ({ movie }) => {
                 <img className="h-full w-full object-cover transition-transform duration-200 ease-in hover:scale-105" 
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 
                 alt={'${movie.original_title} movie poster' } 
+                width="342"
+                height="513"
                 loading="lazy"/>
             </a>
             <section className="w-full absolute bottom-0 p-2 flex flex-col text-yellow-500">
